@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        The GOV.UK prototype kit
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        This is a content prototype for the NDMS-SC 2.
+      </p>
+
+      <p>
+        <a class="button button-start" href="sfc test project/htdocs/resources/views/pages/dashboard.blade.php" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Previous versions</h2>
+
+      <p>There are no previous versions at the moment.</p>
+
+			<h2 class="heading-medium">Examples and documentation</h2>
+
+			<ul class="list list-bullet">
+				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
+			</ul>
+
+      <h2 class="heading-medium">Other resources</h2>
+
+			<ul class="list list-bullet">
+				<li>
+					<a href="https://govuk-elements.herokuapp.com/snippets/">
+						Guide to GOV.UK Elements
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gov.uk/service-manual">
+						Service design manual
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gov.uk/design-principles">
+						Government Digital Service Design Principles
+					</a>
+				</li>
+			</ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

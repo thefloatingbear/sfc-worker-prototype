@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+  <h1 class="heading-large">Your records</h1>
+  <div class="notice">
+    <i class="icon icon-important">
+      <span class="visually-hidden">Warning</span>
+    </i>
+    <strong><a href="https://nmds-sc-v2-development.cloudapps.digital/records/workers">5 worker records</a> and <a href="https://nmds-sc-v2-development.cloudapps.digital/records/establishment">your establishment record</a> need your attention.
+        </strong>
+      </div>
+
+      <div class="grid-row">
+        <div class="column-one-half">
+          <h2 class="heading-medium">Your establishment</h2>
+          <p><a href="https://nmds-sc-v2-development.cloudapps.digital/records/establishment">View and update establishment records</a>
+          </p>
+        </div>
+
+        <div class="column-one-half">
+          <h2 class="heading-medium">Workers</h2>
+          <p><a href="worker-overview">View and update worker records</a>
+          </p>
+          <p><a href="#">Add a new worker record</a>
+          </p>
+          <p><a href="#">Bulk upload worker records</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+{% endblock %}
